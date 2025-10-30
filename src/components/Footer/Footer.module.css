@@ -1,0 +1,10 @@
+footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  gap: 25px;
+}

@@ -13,12 +13,12 @@ header {
   border: 2px solid black;
 }
 
-ul {
+header ul {
   display: flex;
   gap: 1px;
 }
 
-ul li {
+header ul li {
   flex: 1;
   text-align: center;
 }
