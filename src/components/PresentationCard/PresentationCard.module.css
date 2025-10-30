@@ -1,9 +1,13 @@
 main {
+  align-self: center;
+  justify-self: center;
+  /* DEBUG */
   border: 1px solid black;
 }
 
 .hero {
   height: 100%;
+  max-width: 1140px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-content: center;
@@ -12,8 +16,9 @@ main {
 .hero-top,
 .hero-img,
 .hero-bot {
-  border: 1px solid black;
   text-align: center;
+  /* DEBUG */
+  border: 1px solid black;
 }
 
 .hero h2 {
