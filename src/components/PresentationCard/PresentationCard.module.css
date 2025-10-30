@@ -1,0 +1,26 @@
+main {
+  border: 1px solid black;
+}
+
+.hero {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-content: center;
+}
+
+.hero-top,
+.hero-img,
+.hero-bot {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 70px;
+}
+
+.hero-img {
+  width: 500px;
+  justify-self: center;
+}
