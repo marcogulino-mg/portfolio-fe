@@ -16,6 +16,11 @@
 
   a {
     text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: grey;
   }
 
   img,
@@ -62,7 +67,7 @@
       margin-block: 0.75em;
       line-height: 1.25;
       text-wrap: balance;
-      letter-spacing: -0.05ch;
+      letter-spacing: 0.02ch;
     }
 
     li& {

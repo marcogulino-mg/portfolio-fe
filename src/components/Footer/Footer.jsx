@@ -1,4 +1,11 @@
 import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faGoogle,
+  faSquareGithub,
+  faSquareXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -6,16 +13,40 @@ export default function Footer() {
       <nav>
         <ul>
           <li>
-            <a href="#">Social 1</a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="2xl"
+                style={{ color: "#000000" }}
+              />
+            </a>
           </li>
           <li>
-            <a href="#">Social 2</a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faGoogle}
+                size="2xl"
+                style={{ color: "#000000" }}
+              />
+            </a>
           </li>
           <li>
-            <a href="#">Social 3</a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faSquareGithub}
+                size="2xl"
+                style={{ color: "#000000" }}
+              />
+            </a>
           </li>
           <li>
-            <a href="#">Social 4</a>
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faSquareXTwitter}
+                size="2xl"
+                style={{ color: "#000000" }}
+              />
+            </a>
           </li>
         </ul>
       </nav>

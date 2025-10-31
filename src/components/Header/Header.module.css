@@ -1,16 +1,8 @@
-header div,
-nav {
-  /* DEBUG */
-  border: 2px solid black;
-}
-
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 600px 1fr;
   align-items: center;
   padding: 0rem 2rem;
-  /* DEBUG */
-  border: 2px solid black;
 }
 
 header ul {
@@ -25,6 +17,10 @@ header ul li {
 
 .logo {
   justify-self: start;
+}
+
+.logo > img {
+  width: 100px;
 }
 
 .toggle-dn {

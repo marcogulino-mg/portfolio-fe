@@ -8,3 +8,8 @@ footer ul {
   display: flex;
   gap: 25px;
 }
+
+footer nav {
+  margin: 20px;
+  padding: 20px;
+}

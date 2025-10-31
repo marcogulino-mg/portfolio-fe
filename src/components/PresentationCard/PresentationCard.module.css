@@ -7,7 +7,7 @@ main {
 
 .hero {
   height: 100%;
-  max-width: 1140px;
+  max-width: 1280px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   justify-content: center;
@@ -22,10 +22,14 @@ main {
 }
 
 .hero h2 {
-  font-size: 70px;
+  font-size: 90px;
 }
 
 .hero-img {
-  width: 500px;
+  width: 1000px;
   justify-self: center;
+}
+
+.hero-bot {
+  color: rgb(128, 128, 128);
 }
