@@ -4,13 +4,12 @@ export default function PresentationCard() {
   return (
     <section className={styles.hero}>
       <div className={styles["hero-top"]}>
-        <h2>LOREM IPSUM</h2>
+        <h1>HI, I'M MARCO GULINO</h1>
+        <h2>JR. WEB DEVELOPER</h2>
+        <p>Constantly learning and improving, one project at a time.</p>
       </div>
       <div className={styles["hero-img"]}>
-        <h2>IMAGE PLACEHOLDER</h2>
-      </div>
-      <div className={styles["hero-bot"]}>
-        <h2>LOREM IPSUM DOLOR SIT AMET.</h2>
+        <img src="./images/avatarv2.jpg" alt="Personal Avatar" />
       </div>
     </section>
   );

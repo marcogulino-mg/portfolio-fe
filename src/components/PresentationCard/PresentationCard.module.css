@@ -1,35 +1,51 @@
 main {
   align-self: center;
   justify-self: center;
-  /* DEBUG */
-  border: 1px solid black;
 }
 
 .hero {
   height: 100%;
-  max-width: 1280px;
+  max-width: 1600px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  justify-content: center;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  box-shadow: 15px 15px 15px grey;
+  border: solid 0.5px black;
+  border-radius: 20px;
 }
 
 .hero-top,
 .hero-img,
 .hero-bot {
   text-align: center;
-  /* DEBUG */
-  border: 1px solid black;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: 90px;
 }
 
+.hero h2 {
+  font-size: 70px;
+  margin-block: 10px;
+  color: rgb(128, 128, 128);
+}
+
+.hero p {
+  font-size: 35px;
+  font-family: monospace;
+  font-weight: 300;
+}
+
 .hero-img {
-  width: 1000px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  max-width: 550px;
   justify-self: center;
 }
 
-.hero-bot {
-  color: rgb(128, 128, 128);
+.hero-top {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  text-align: left;
 }
