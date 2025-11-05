@@ -16,11 +16,11 @@
 
   a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-text-color);
   }
 
   a:hover {
-    color: grey;
+    color: var(--secondary-text-color);
   }
 
   img,
@@ -50,6 +50,7 @@
   h5,
   h6 {
     overflow-wrap: break-word;
+    color: var(--primary-text-color);
   }
 
   ol,

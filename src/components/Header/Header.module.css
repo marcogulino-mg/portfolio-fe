@@ -25,4 +25,5 @@ header ul li {
 
 .toggle-dn {
   justify-self: end;
+  cursor: pointer;
 }

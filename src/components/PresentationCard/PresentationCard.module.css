@@ -9,8 +9,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
-  box-shadow: 15px 15px 15px grey;
-  border: solid 0.5px black;
+  box-shadow: 0 0 15px grey;
   border-radius: 20px;
 }
 
@@ -27,7 +26,7 @@ main {
 .hero h2 {
   font-size: 70px;
   margin-block: 10px;
-  color: rgb(128, 128, 128);
+  color: var(--secondary-text-color);
 }
 
 .hero p {

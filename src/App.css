@@ -1,3 +1,15 @@
+:root {
+  --base-color: white;
+  --primary-text-color: black;
+  --secondary-text-color: grey;
+}
+
+.darkmode {
+  --base-color: black;
+  --primary-text-color: white;
+  --secondary-text-color: grey;
+}
+
 #root {
   min-height: 100vh;
   display: grid;
@@ -13,6 +25,8 @@ body {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--base-color);
+  transition: 0.3s ease, color 0.3s ease;
 }
 
 header {

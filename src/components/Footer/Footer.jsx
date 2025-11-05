@@ -17,7 +17,7 @@ export default function Footer() {
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="2xl"
-                style={{ color: "#000000" }}
+                style={{ color: "var(--primary-text-color)" }}
               />
             </a>
           </li>
@@ -26,7 +26,7 @@ export default function Footer() {
               <FontAwesomeIcon
                 icon={faGoogle}
                 size="2xl"
-                style={{ color: "#000000" }}
+                style={{ color: "var(--primary-text-color)" }}
               />
             </a>
           </li>
@@ -35,7 +35,7 @@ export default function Footer() {
               <FontAwesomeIcon
                 icon={faSquareGithub}
                 size="2xl"
-                style={{ color: "#000000" }}
+                style={{ color: "var(--primary-text-color)" }}
               />
             </a>
           </li>
@@ -44,7 +44,7 @@ export default function Footer() {
               <FontAwesomeIcon
                 icon={faSquareXTwitter}
                 size="2xl"
-                style={{ color: "#000000" }}
+                style={{ color: "var(--primary-text-color)" }}
               />
             </a>
           </li>

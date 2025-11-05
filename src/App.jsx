@@ -1,17 +1,20 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import PresentationCard from "./components/PresentationCard/PresentationCard";
+import ThemeContext from "./contexts/ThemeContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DefaultLayout from "./layouts/DefaultLayout";
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <PresentationCard />
-      </main>
-      <Footer />
-    </>
+    <ThemeContext>
+      <BrowserRouter>
+        <Routes>
+          <Route Component={DefaultLayout}>
+            <Route path="/" element={<PresentationCard />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeContext>
   );
 }
 
