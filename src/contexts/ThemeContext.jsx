@@ -9,17 +9,31 @@ export default function ThemeProvider({ children }) {
     () => localStorage.getItem("theme") === "dark"
   );
 
+  // Circle State
+  const [circleActive, setCircleActive] = useState(false);
+
   // Dark mode
   function themeToggle() {
-    const newTheme = darkMode ? "light" : "dark";
-    setDarkMode(!darkMode);
-    localStorage.setItem("theme", newTheme);
+    // Avvia animazione cerchio
+    setCircleActive(true);
 
-    if (newTheme === "dark") {
-      document.body.classList.add("darkmode");
-    } else {
-      document.body.classList.remove("darkmode");
-    }
+    // cambia tema a metà animazione
+    setTimeout(() => {
+      const newTheme = darkMode ? "light" : "dark";
+      setDarkMode(!darkMode);
+      localStorage.setItem("theme", newTheme);
+
+      if (newTheme === "dark") {
+        document.body.classList.add("darkmode");
+      } else {
+        document.body.classList.remove("darkmode");
+      }
+    }, 300); // cambia tema dopo 0.3s, mentre il cerchio si espande
+
+    // disattiva animazione dopo che rientra
+    setTimeout(() => {
+      setCircleActive(false);
+    }, 800);
   }
 
   useEffect(() => {
@@ -31,7 +45,7 @@ export default function ThemeProvider({ children }) {
   }, [darkMode]);
 
   return (
-    <ThemeContext.Provider value={{ darkMode, themeToggle }}>
+    <ThemeContext.Provider value={{ darkMode, themeToggle, circleActive }}>
       {children}
     </ThemeContext.Provider>
   );

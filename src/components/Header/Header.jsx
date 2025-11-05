@@ -2,11 +2,11 @@ import styles from "./Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-solid-svg-icons/faMoon";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
 
 export default function Header() {
-  const { darkMode, themeToggle } = useContext(ThemeContext);
+  const { darkMode, themeToggle, circleActive } = useContext(ThemeContext);
 
   return (
     <header>
@@ -44,6 +44,11 @@ export default function Header() {
           />
         )}
       </div>
+      <div
+        className={`${styles.themeCircle} ${
+          circleActive ? styles.themeCircleExpand : styles.themeCircleShrink
+        } ${darkMode ? styles.themeCircleDark : styles.themeCircleLight}`}
+      />
     </header>
   );
 }
