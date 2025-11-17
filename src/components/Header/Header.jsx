@@ -4,6 +4,7 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons/faMoon";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const { darkMode, themeToggle, circleActive } = useContext(ThemeContext);
@@ -12,20 +13,20 @@ export default function Header() {
     <header>
       <div className={styles.logo}>
         <img
-          src={darkMode ? "./images/logodark.png" : "./images/logo.png"}
+          src={darkMode ? "./images/logo-tr-black.svg" : "./images/logo-tr.svg"}
           alt="logo"
         />
       </div>
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#">About Me</a>
+            <Link to={"/"}>About Me</Link>
           </li>
         </ul>
       </nav>

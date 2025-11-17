@@ -1,16 +1,26 @@
 main {
   align-self: center;
   justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 100vh;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
 }
 
 .hero {
-  height: 100%;
+  /* height: 100%; */
   max-width: 1600px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  align-items: center;
-  box-shadow: 0 0 15px grey;
-  border-radius: 20px;
+  /* align-items: center; */
+  /* box-shadow: 0 0 15px grey; */
+  /* border-radius: 20px; */
+  scroll-snap-align: start;
+  place-items: center;
+  padding: 2rem;
+  z-index: 10;
 }
 
 .hero-top,

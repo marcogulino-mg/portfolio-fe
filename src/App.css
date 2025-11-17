@@ -21,6 +21,10 @@
     "footer";
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Boldonse", system-ui;
   font-weight: 400;

@@ -17,7 +17,6 @@ export default function ThemeProvider({ children }) {
     // Avvia animazione cerchio
     setCircleActive(true);
 
-    // cambia tema a metà animazione
     setTimeout(() => {
       const newTheme = darkMode ? "light" : "dark";
       setDarkMode(!darkMode);
@@ -28,12 +27,11 @@ export default function ThemeProvider({ children }) {
       } else {
         document.body.classList.remove("darkmode");
       }
-    }, 300); // cambia tema dopo 0.3s, mentre il cerchio si espande
+    }, 500);
 
-    // disattiva animazione dopo che rientra
     setTimeout(() => {
       setCircleActive(false);
-    }, 800);
+    }, 1000);
   }
 
   useEffect(() => {
